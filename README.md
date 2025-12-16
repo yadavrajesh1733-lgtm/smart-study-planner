@@ -1,37 +1,59 @@
-# smart-study-planner
-## Summary
-Smart Study Planner is an AI-powered application that helps students estimate the number of study hours required for an exam using machine learning. The system considers the time available before the exam, subject difficulty, and previous academic performance to provide personalized study recommendations. This project was created as part of the Building AI course to demonstrate how simple AI models can support effective learning and time management.
+<!-- Final project README for the Building AI course
+created by Reaktor Innovations and University of Helsinki -->
+
 # Smart Study Planner
 
-Smart Study Planner is an AI-powered system that helps students estimate how many hours they should study for an exam based on the time available, subject difficulty, and previous academic performance.
+Final project for the Building AI course
 
-This project is developed as part of the **Building AI** course and demonstrates how simple machine learning models can assist in better learning and time management decisions.
+## Summary
+Smart Study Planner is an AI-powered application that helps students estimate how many hours they should study for an exam. It uses simple machine learning to analyze time before the exam, subject difficulty, and previous performance to provide personalized study hour recommendations.
 
----
+## Background
+Many students struggle with time management and often do not know how much time to dedicate to studying for exams. This problem is very common among school and college students, especially during exam periods.
 
-## Problem
-Many students struggle to decide how much time they should dedicate to studying for exams. Poor planning can lead to stress or underperformance.
+My motivation for this project comes from my own academic experience, where improper study planning led to stress and inefficient preparation. This topic is important because better planning can improve performance while reducing anxiety and burnout.
 
----
+Problems addressed:
+* Poor study time estimation
+* Inefficient exam preparation
+* High stress due to last-minute studying
 
-## Solution
-The Smart Study Planner uses a **Linear Regression** model to recommend study hours based on:
-- Days before the exam
-- Subject difficulty
-- Previous score
+## How is it used?
+The user opens the application and provides basic inputs such as:
+- Number of days remaining before the exam  
+- Difficulty level of the subject  
+- Previous exam score  
 
----
+Based on these inputs, the system predicts the recommended number of study hours.  
+The solution is useful for students during exam preparation periods and can be accessed anytime through a simple web interface. The primary users are students who want better time management and personalized study guidance.
 
-## Data & AI Methods
-- Dataset: Historical study data in CSV
-- Model: Linear Regression (scikit-learn)
-- Interface: Streamlit web application
+## Data sources and AI methods
+The project uses a small, structured dataset containing historical study behavior and outcomes. The data is stored in CSV format and is used only for demonstration purposes.
 
----
+AI methods used:
+- Linear Regression (supervised machine learning)
+- Data preprocessing using pandas
+- Model implementation using scikit-learn
 
-## How to Run
+## Challenges
+This project does not consider individual learning styles, mental health factors, or external responsibilities such as part-time jobs. The predictions are approximate and should not be treated as exact rules.
 
-1. Install requirements:
-```bash
+Ethical considerations include:
+- Avoiding over-reliance on AI recommendations
+- Ensuring no personal or sensitive data is collected
+- Using the system only as a supportive tool
+
+## What next?
+In the future, this project could be improved by:
+- Adding personalized learning preferences
+- Using more advanced machine learning models
+- Integrating progress tracking and reminders
+- Expanding the dataset for better accuracy
+
+## Acknowledgments
+* Building AI course by Reaktor Innovations and University of Helsinki
+* scikit-learn documentation
+* Streamlit documentation
+
 pip install streamlit pandas scikit-learn
 

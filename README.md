@@ -1,4 +1,7 @@
 # smart-study-planner
+## Summary
+Smart Study Planner is an AI-powered application that helps students estimate the number of study hours required for an exam using machine learning. The system considers the time available before the exam, subject difficulty, and previous academic performance to provide personalized study recommendations. This project was created as part of the Building AI course to demonstrate how simple AI models can support effective learning and time management.
+
 import streamlit as st
 import pandas as pd
 from sklearn.linear_model import LinearRegression
